@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACSA | Banquetes, Alquiler de Mobiliario y Salones</title>
+    <meta name="description" content="Servicios de preparación de alimentos, banquetes, alquiler de salones, mobiliario para eventos y limpieza integral en Coatzacoalcos, Veracruz.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D31218',
+                            green: '#76C143',
+                            dark: '#1C1A1A',
+                            light: '#F8F9FA',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; color: #1C1A1A; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <nav class="bg-brand-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <img src="./pracsa_logo.png" alt="PRACSA Logo" class="h-20 w-auto object-contain">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios" class="text-brand-dark hover:text-brand-red font-medium transition">Servicios</a>
+                    <a href="#nosotros" class="text-brand-dark hover:text-brand-red font-medium transition">Nosotros</a>
+                    <a href="#contacto" class="text-brand-dark hover:text-brand-red font-medium transition">Contacto</a>
+                    <a href="https://wa.me/529211925155" target="_blank" rel="noopener noreferrer" class="bg-brand-red text-brand-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-700 transition shadow-md flex items-center gap-2">
+                        <i data-feather="message-circle" class="w-5 h-5"></i> Cotizar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-brand-dark text-brand-white py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <!-- Subtle abstract pattern or gradient background -->
+            <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-brand-red to-transparent"></div>
+            <div class="absolute left-0 bottom-0 w-1/2 h-full bg-gradient-to-r from-brand-green to-transparent opacity-30"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="md:w-2/3">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-green bg-opacity-20 text-brand-green font-semibold text-sm mb-6 border border-brand-green">Excelencia desde 2016</span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Creamos experiencias memorables para tus eventos</h1>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl">Ofrecemos servicios de banquetes, alquiler de salones, mobiliario de primera calidad y soluciones integrales de limpieza en Coatzacoalcos.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/529211925155" target="_blank" rel="noopener noreferrer" class="bg-brand-red text-brand-white text-center px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition shadow-lg text-lg flex items-center justify-center gap-2">
+                        <i data-feather="phone-call" class="w-5 h-5"></i> Cotizar Evento
+                    </a>
+                    <a href="#servicios" class="bg-transparent border border-brand-white text-brand-white text-center px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-brand-dark transition text-lg flex items-center justify-center">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Banner -->
+    <section id="nosotros" class="bg-brand-white py-16 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-brand-dark mb-4 uppercase tracking-wider">PRODUCTORA DE ALIMENTOS DE CALIDAD S.A DE C.V</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                Con años de trayectoria en el mercado, PRACSA es sinónimo de confianza, puntualidad y un servicio impecable. Nos dedicamos a que cada detalle de tu evento sea perfecto, brindando soluciones integrales.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-brand-light flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-dark mb-4">Nuestros Servicios</h2>
+                <div class="w-24 h-1.5 bg-brand-red mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red mb-6 group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
+                        <i data-feather="coffee" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Banquetes y Catering</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Preparación de alimentos exquisitos para ocasiones especiales. Menús personalizados que deleitarán a tus invitados con la más alta calidad.
+                    </p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
+                        <i data-feather="grid" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Alquiler de Mobiliario</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Alquiler de mesas, sillas, vajillas y equipo especializado para darle un toque único a cualquier celebración, comercio o servicio.
+                    </p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red mb-6 group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
+                        <i data-feather="map" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Salones de Eventos</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Alquiler de espacios amplios y elegantes ideales para fiestas, celebraciones sociales, conferencias y convenciones corporativas.
+                    </p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
+                        <i data-feather="wind" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Limpieza Integral</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Servicios profesionales de limpieza integral para mantener los espacios impecables antes, durante y después del evento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contacto" class="bg-brand-dark text-brand-white relative mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">¿Listo para tu próximo evento?</h2>
+                    <p class="text-gray-400 mb-8 max-w-md">Contáctanos hoy mismo y descubre cómo podemos ayudarte a hacer de tu ocasión especial un momento inolvidable.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-red p-3 rounded-full mt-1">
+                                <i data-feather="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Ubicación</h4>
+                                <p class="text-gray-400">Calle Cuauhtémoc 301, Coatzacoalcos Centro<br>C.P. 96400, Coatzacoalcos, Veracruz, México</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-green p-3 rounded-full mt-1">
+                                <i data-feather="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Teléfono</h4>
+                                <p class="text-gray-400">921 192 5155</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-red p-3 rounded-full mt-1">
+                                <i data-feather="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Correo Electrónico</h4>
+                                <p class="text-gray-400">productorasadecv@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="bg-white rounded-2xl p-8 shadow-2xl text-brand-dark transform lg:-translate-y-8">
+                    <h3 class="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <form id="contactForm" onsubmit="event.preventDefault(); window.open('https://wa.me/529211925155', '_blank');">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Servicio de interés</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition cursor-pointer">
+                                <option>Banquetes y Catering</option>
+                                <option>Alquiler de Mobiliario</option>
+                                <option>Salones de Eventos</option>
+                                <option>Servicios de Limpieza</option>
+                                <option>Múltiples servicios</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition resize-none" placeholder="Detalles de su evento..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-red text-white font-bold py-4 rounded-lg hover:bg-red-700 transition flex justify-center items-center gap-2">
+                            <i data-feather="send" class="w-5 h-5"></i> Enviar Mensaje
+                        </button>
+                        <p class="text-xs text-gray-500 mt-4 text-center">Al enviar serás redirigido a nuestro WhatsApp para atención inmediata.</p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 PRODUCTORA DE ALIMENTOS DE CALIDAD S.A DE C.V (PRACSA). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
