@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRACSA | Banquetes, Alquiler de Mobiliario y Salones</title>
-    <meta name="description" content="Servicios de preparación de alimentos, banquetes, alquiler de salones, mobiliario para eventos y limpieza integral en Coatzacoalcos, Veracruz.">
+    <title>PRACSA | Gestión Integral de Eventos y Banquetes</title>
+    <meta name="description" content="Gestión integral de eventos corporativos, banquetes de alta gama y soluciones logísticas en Coatzacoalcos, Veracruz.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,9 +45,11 @@
                 <div class="flex items-center">
                     <img src="./pracsa_logo.png" alt="PRACSA Logo" class="h-20 w-auto object-contain">
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#nosotros" class="text-brand-dark hover:text-brand-red font-medium transition">Perfil Corporativo</a>
                     <a href="#servicios" class="text-brand-dark hover:text-brand-red font-medium transition">Servicios</a>
-                    <a href="#nosotros" class="text-brand-dark hover:text-brand-red font-medium transition">Nosotros</a>
+                    <a href="#propuesta" class="text-brand-dark hover:text-brand-red font-medium transition">Propuesta de Valor</a>
+                    <a href="#experiencia" class="text-brand-dark hover:text-brand-red font-medium transition">Experiencia</a>
                     <a href="#contacto" class="text-brand-dark hover:text-brand-red font-medium transition">Contacto</a>
                     <a href="https://wa.me/529211925155" target="_blank" rel="noopener noreferrer" class="bg-brand-red text-brand-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-700 transition shadow-md flex items-center gap-2">
                         <i data-feather="message-circle" class="w-5 h-5"></i> Cotizar
@@ -60,88 +62,221 @@
     <!-- Hero Section -->
     <header class="relative bg-brand-dark text-brand-white py-32 overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <!-- Subtle abstract pattern or gradient background -->
             <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-brand-red to-transparent"></div>
             <div class="absolute left-0 bottom-0 w-1/2 h-full bg-gradient-to-r from-brand-green to-transparent opacity-30"></div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="md:w-2/3">
-                <span class="inline-block py-1 px-3 rounded-full bg-brand-green bg-opacity-20 text-brand-green font-semibold text-sm mb-6 border border-brand-green">Excelencia desde 2016</span>
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Creamos experiencias memorables para tus eventos</h1>
-                <p class="text-xl text-gray-300 mb-10 max-w-2xl">Ofrecemos servicios de banquetes, alquiler de salones, mobiliario de primera calidad y soluciones integrales de limpieza en Coatzacoalcos.</p>
+            <div class="md:w-3/4">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-green bg-opacity-20 text-brand-green font-semibold text-sm mb-6 border border-brand-green">Gestión Integral y Logística Corporativa</span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Transformamos espacios y coordinamos experiencias memorables</h1>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl">Expertos en conceptualización, logística y ejecución integral de eventos corporativos, convenciones y ocasiones especiales de alto nivel.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="https://wa.me/529211925155" target="_blank" rel="noopener noreferrer" class="bg-brand-red text-brand-white text-center px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition shadow-lg text-lg flex items-center justify-center gap-2">
                         <i data-feather="phone-call" class="w-5 h-5"></i> Cotizar Evento
                     </a>
                     <a href="#servicios" class="bg-transparent border border-brand-white text-brand-white text-center px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-brand-dark transition text-lg flex items-center justify-center">
-                        Ver Servicios
+                        Ver Portafolio
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Trust Banner -->
-    <section id="nosotros" class="bg-brand-white py-16 border-b border-gray-200">
+    <!-- Perfil Corporativo -->
+    <section id="nosotros" class="bg-brand-white py-20 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl font-bold text-brand-dark mb-4 uppercase tracking-wider">PRODUCTORA DE ALIMENTOS DE CALIDAD S.A DE C.V</h2>
-            <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-                Con años de trayectoria en el mercado, PRACSA es sinónimo de confianza, puntualidad y un servicio impecable. Nos dedicamos a que cada detalle de tu evento sea perfecto, brindando soluciones integrales.
+            <h2 class="text-sm font-bold text-brand-red mb-2 uppercase tracking-widest">Quiénes Somos</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Perfil Corporativo</h3>
+            <div class="w-24 h-1.5 bg-brand-red mx-auto rounded mb-8"></div>
+            <p class="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
+                Somos una empresa especializada en la conceptualización, logística y ejecución integral de eventos corporativos, convenciones y ocasiones especiales. Nos dedicamos a transformar espacios y coordinar experiencias memorables mediante servicios premium de banquetes, alquiler de infraestructura de vanguardia y soporte operativo de inicio a fin. Nuestro compromiso es liberar de la carga logística a nuestros clientes, garantizando la máxima calidad, puntualidad y excelencia en cada detalle.
             </p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="servicios" class="py-24 bg-brand-light flex-grow">
+    <!-- Servicios Integrales -->
+    <section id="servicios" class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-dark mb-4">Nuestros Servicios</h2>
+                <h2 class="text-sm font-bold text-brand-red mb-2 uppercase tracking-widest">Qué Hacemos</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Portafolio de Servicios Integrales</h3>
                 <div class="w-24 h-1.5 bg-brand-red mx-auto rounded"></div>
+                <p class="mt-6 text-gray-600 max-w-3xl mx-auto">Soluciones estratégicas comerciales diseñadas para satisfacer los estándares más exigentes del sector B2B y corporativo.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Servicio 1 -->
-                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red mb-6 group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
-                        <i data-feather="coffee" class="w-7 h-7"></i>
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
+                            <i data-feather="coffee" class="w-7 h-7"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-brand-dark">Catering y Banquetes de Alta Gama</h4>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Banquetes y Catering</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Preparación de alimentos exquisitos para ocasiones especiales. Menús personalizados que deleitarán a tus invitados con la más alta calidad.
-                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Diseño de menús personalizados</strong> para cenas de gala, cocteles de negocios y aniversarios.</span></li>
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Servicio de Coffee Break</strong> continuo para seminarios, talleres y juntas de consejo.</span></li>
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Personal de servicio certificado</strong> (meseros, barmans y coordinadores de mesa).</span></li>
+                    </ul>
                 </div>
 
                 <!-- Servicio 2 -->
-                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
-                        <i data-feather="grid" class="w-7 h-7"></i>
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
+                            <i data-feather="grid" class="w-7 h-7"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-brand-dark">Infraestructura y Mobiliario</h4>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Alquiler de Mobiliario</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Alquiler de mesas, sillas, vajillas y equipo especializado para darle un toque único a cualquier celebración, comercio o servicio.
-                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Mobiliario Fino:</strong> Mesas (imperiales, lounge), sillas de diseño, vajillas y mantelería temática.</span></li>
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Equipamiento Comercial y Tecnológico:</strong> Soporte operativo para activaciones de marca, stands y ferias.</span></li>
+                    </ul>
                 </div>
 
                 <!-- Servicio 3 -->
-                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red mb-6 group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
-                        <i data-feather="map" class="w-7 h-7"></i>
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-brand-red bg-opacity-10 rounded-xl flex items-center justify-center text-brand-red group-hover:bg-brand-red group-hover:text-brand-white transition-colors">
+                            <i data-feather="map" class="w-7 h-7"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-brand-dark">Gestión y Alquiler de Espacios</h4>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Salones de Eventos</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Alquiler de espacios amplios y elegantes ideales para fiestas, celebraciones sociales, conferencias y convenciones corporativas.
-                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Coordinación y renta de salones</strong> exclusivos para fiestas, congresos y lanzamientos de producto.</span></li>
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Adaptación e interiorismo</strong> de espacios según el aforo y los requerimientos técnicos.</span></li>
+                    </ul>
                 </div>
 
                 <!-- Servicio 4 -->
-                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
-                        <i data-feather="wind" class="w-7 h-7"></i>
+                <div class="bg-brand-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center text-brand-green group-hover:bg-brand-green group-hover:text-brand-white transition-colors">
+                            <i data-feather="wind" class="w-7 h-7"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-brand-dark">Sanitización y Mantenimiento</h4>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Limpieza Integral</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Servicios profesionales de limpieza integral para mantener los espacios impecables antes, durante y después del evento.
-                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Limpieza profunda post-evento</strong> asegurando que los recintos queden en perfectas condiciones.</span></li>
+                        <li class="flex items-start gap-3"><i data-feather="check-circle" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i> <span><strong>Mantenimiento de espacios comerciales</strong> y oficinas con altos estándares de higiene continua.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section id="propuesta" class="py-24 bg-brand-dark text-brand-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-green mb-2 uppercase tracking-widest">Por qué elegirnos</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">Nuestra Propuesta de Valor</h3>
+                <div class="w-24 h-1.5 bg-brand-red mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-10 hover:bg-opacity-10 transition-colors">
+                    <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                        <i data-feather="key" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Solución Llave en Mano</h4>
+                    <p class="text-gray-400">Ofrecemos desde el menú y el mobiliario hasta el recinto y la limpieza final; un solo proveedor para toda la cadena logística.</p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-10 hover:bg-opacity-10 transition-colors transform md:-translate-y-4">
+                    <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6 text-brand-dark">
+                        <i data-feather="award" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Estándares Corporativos</h4>
+                    <p class="text-gray-400">Puntualidad estricta, personal uniformado, higiene impecable y cumplimiento cabal de normativas de seguridad.</p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-10 hover:bg-opacity-10 transition-colors">
+                    <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                        <i data-feather="sliders" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Flexibilidad Operativa</h4>
+                    <p class="text-gray-400">Capacidad para adaptarnos a pequeños eventos de alta dirección o a convenciones masivas, cuidando siempre el control de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Destacada -->
+    <section id="experiencia" class="py-24 bg-brand-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-sm font-bold text-brand-red mb-2 uppercase tracking-widest">Líneas de Trabajo</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Experiencia Destacada</h3>
+                    <div class="w-24 h-1.5 bg-brand-red rounded"></div>
+                </div>
+                <p class="text-gray-600 max-w-xl md:text-right mt-6 md:mt-0">Casos prácticos de excelencia operativa que demuestran nuestra solvencia en licitaciones y propuestas comerciales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow bg-brand-light">
+                    <h4 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                        <i data-feather="users" class="text-brand-red"></i> Convenciones Corporativas
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">Ejecución logística de congresos anuales de negocios, proveyendo el salón, equipo de audio/stands, servicios de coffee break para cientos de asistentes y la entrega del recinto impecable.</p>
+                </div>
+                <div class="border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow bg-brand-light">
+                    <h4 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                        <i data-feather="star" class="text-brand-green"></i> Banquetes de Gala
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">Servicio integral de catering formal de tres tiempos para cenas de fin de año o aniversarios empresariales, incluyendo montaje completo de vajillas y mobiliario premium.</p>
+                </div>
+                <div class="border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow bg-brand-light">
+                    <h4 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                        <i data-feather="briefcase" class="text-brand-red"></i> Soporte a Exposiciones
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">Montaje de infraestructura y equipamiento temporal para ferias comerciales, complementado con brigadas de limpieza continua durante las jornadas de exposición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología de Servicio -->
+    <section id="metodologia" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-red mb-2 uppercase tracking-widest">Cómo Trabajamos</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Nuestra Metodología</h3>
+                <div class="w-24 h-1.5 bg-brand-red mx-auto rounded"></div>
+            </div>
+
+            <div class="relative">
+                <!-- Línea conectora (visible en desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <!-- Paso 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative group hover:-translate-y-2 transition-transform">
+                        <div class="w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 shadow-lg border-4 border-white group-hover:scale-110 transition-transform">1</div>
+                        <h4 class="font-bold text-brand-dark mb-2 text-lg">Planificación</h4>
+                        <p class="text-gray-500 text-sm">Definición del concepto, aforo, diseño de menú y selección del espacio idóneo.</p>
+                    </div>
+                    
+                    <!-- Paso 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative group hover:-translate-y-2 transition-transform">
+                        <div class="w-12 h-12 bg-brand-green text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 shadow-lg border-4 border-white group-hover:scale-110 transition-transform">2</div>
+                        <h4 class="font-bold text-brand-dark mb-2 text-lg">Logística y Montaje</h4>
+                        <p class="text-gray-500 text-sm">Traslado y colocación de mobiliario, equipos y preparación de alimentos bajo normas de higiene.</p>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative group hover:-translate-y-2 transition-transform">
+                        <div class="w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 shadow-lg border-4 border-white group-hover:scale-110 transition-transform">3</div>
+                        <h4 class="font-bold text-brand-dark mb-2 text-lg">Coordinación Activa</h4>
+                        <p class="text-gray-500 text-sm">Supervisión en tiempo real durante el evento para garantizar un servicio fluido sin imprevistos.</p>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative group hover:-translate-y-2 transition-transform">
+                        <div class="w-12 h-12 bg-brand-green text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 shadow-lg border-4 border-white group-hover:scale-110 transition-transform">4</div>
+                        <h4 class="font-bold text-brand-dark mb-2 text-lg">Desmontaje</h4>
+                        <p class="text-gray-500 text-sm">Retiro eficiente de la infraestructura y ejecución de los servicios de limpieza profunda.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,8 +288,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- Info -->
                 <div>
-                    <h2 class="text-3xl font-bold mb-6">¿Listo para tu próximo evento?</h2>
-                    <p class="text-gray-400 mb-8 max-w-md">Contáctanos hoy mismo y descubre cómo podemos ayudarte a hacer de tu ocasión especial un momento inolvidable.</p>
+                    <h2 class="text-3xl font-bold mb-6">¿Listo para coordinar tu próximo evento corporativo?</h2>
+                    <p class="text-gray-400 mb-8 max-w-md">Contáctanos hoy mismo y descubre cómo nuestra experiencia logística puede hacer de tu ocasión un éxito rotundo y libre de estrés.</p>
                     
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
@@ -171,7 +306,7 @@
                                 <i data-feather="phone" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg">Teléfono</h4>
+                                <h4 class="font-bold text-lg">Teléfono / WhatsApp</h4>
                                 <p class="text-gray-400">921 192 5155</p>
                             </div>
                         </div>
@@ -189,36 +324,39 @@
 
                 <!-- Formulario -->
                 <div class="bg-white rounded-2xl p-8 shadow-2xl text-brand-dark transform lg:-translate-y-8">
-                    <h3 class="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <h3 class="text-2xl font-bold mb-6">Solicitar Cotización</h3>
                     <form id="contactForm" onsubmit="event.preventDefault(); window.open('https://wa.me/529211925155', '_blank');">
                         <div class="mb-4">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition" placeholder="Tu nombre">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nombre o Empresa</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition" placeholder="Tu nombre corporativo">
                         </div>
                         <div class="mb-4">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Servicio de interés</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Servicio Principal Requerido</label>
                             <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition cursor-pointer">
-                                <option>Banquetes y Catering</option>
-                                <option>Alquiler de Mobiliario</option>
-                                <option>Salones de Eventos</option>
-                                <option>Servicios de Limpieza</option>
-                                <option>Múltiples servicios</option>
+                                <option>Convención o Congreso</option>
+                                <option>Banquete de Gala Corporativo</option>
+                                <option>Alquiler de Mobiliario y Equipo</option>
+                                <option>Servicios de Sanitización B2B</option>
+                                <option>Solución Logística Integral</option>
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition resize-none" placeholder="Detalles de su evento..."></textarea>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Detalles del Evento</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition resize-none" placeholder="Aforo estimado, fechas tentativas, recinto..."></textarea>
                         </div>
                         <button type="submit" class="w-full bg-brand-red text-white font-bold py-4 rounded-lg hover:bg-red-700 transition flex justify-center items-center gap-2">
-                            <i data-feather="send" class="w-5 h-5"></i> Enviar Mensaje
+                            <i data-feather="send" class="w-5 h-5"></i> Enviar a WhatsApp
                         </button>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Al enviar serás redirigido a nuestro WhatsApp para atención inmediata.</p>
+                        <p class="text-xs text-gray-500 mt-4 text-center">Iniciaremos una conversación directa en WhatsApp para atención inmediata.</p>
                     </form>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
                 <p>&copy; 2026 PRODUCTORA DE ALIMENTOS DE CALIDAD S.A DE C.V (PRACSA). Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <!-- Redes sociales placeholders if needed -->
+                </div>
             </div>
         </div>
     </footer>
